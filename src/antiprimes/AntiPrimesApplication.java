@@ -16,11 +16,7 @@ public class AntiPrimesApplication {
     public static void main(String[] args) {
         AntiPrimesSequence sequence = new AntiPrimesSequence();
 
-        SwingUtilities.invokeLater(new Runnable() {
-            public void run() {
-                MainWindow window = new MainWindow(sequence);
-                window.setVisible(true);
-            }
-        });
+        MainWindow window = new MainWindow(sequence);
+        window.setVisible(true);
     }
 }
